@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index_styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo-primar.png" alt="Primar Logo">
+            </div>
+            <h1>Screw Thread Classificator</h1>
+            <div class="logo">
+                <img src="logo-virgon.png" alt="Virgon Logo">
+            </div>
+        </header>
+
+        <main>
+            <div class="image-box"></div>
+            <div class="classification">
+                <span class="com-rosca">Com Rosca: {0.9}</span>
+                <span class="sem-rosca">Sem Rosca: {0.1}</span>
+            </div>
+            <div class="buttons">
+                <button class="aprovar">Aprovar</button>
+                <button class="reprovar">Reprovar</button>
+            </div>
+        </main>
+
+        <footer>
+            Instituto Senai de Tecnologia "Roberto Mange" - 2024
+        </footer>
+    </div>
+</body>
+</html>
