@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Feeds</title>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        .video-feed {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feeds de Vídeo das Câmeras</h1>
+    <div class="video-container">
+        <!-- Exibe o feed da câmera 1 -->
+        <div class="video-feed">
+            <h2>Câmera 1</h2>
+            <img src="{{ url_for('camera1_feed') }}" width="640" height="480">
+        </div>
+        
+        <!-- Exibe o feed da câmera 2 -->
+        <div class="video-feed">
+            <h2>Câmera 2</h2>
+            <img src="{{ url_for('camera2_feed') }}" width="640" height="480">
+        </div>
+    </div>
+</body>
+</html>
